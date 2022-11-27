@@ -9,5 +9,6 @@
 @mixin hoverCards {
     &:hover {
         transform: scale(1.02);
+        transition: 0.9s;
       };
 }

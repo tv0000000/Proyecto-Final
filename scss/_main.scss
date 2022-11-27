@@ -3,21 +3,32 @@
 .mainIndex {
   background: $color-fondos;
 
+  .imgIndex {
+    width: 30%;
+  }
+
   .tituloIndex {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 2.5rem;
+    padding-top: 15px;
+    // padding-bottom: 5px;
+    font-size: 2rem;
     text-transform: uppercase;
-    @include titulos;
+    // @include titulos;
     color: #fff;
   }
 
-  .carouselIndex {
-    padding-bottom: 20px;
-  }
+  // .carouselIndex {
+  //   padding-bottom: 20px;
+  // }
 
   .parrafoIndex {
     @include titulos;
+  }
+
+
+  @media (min-width: 0px) and (max-width: 480px) {
+    .imgIndex {
+      width: 70%;
+    }
   }
 }
 
@@ -40,11 +51,15 @@
 /* ============ CHARLAS ============*/
 
 .mainCharlas {
+  background: $color-fondos;
+
+  .imgCharlas {
+    height: 50%;
+  }
 
   .textoCharlas {
     @include letra;
     text-align: center;
-    padding-top: 1rem;
     font-size: $tamaño-fuente;
     animation-name: animationtex;
     animation-duration: 0.5s;
@@ -60,16 +75,27 @@
       color: red;
     }
   }
+
+  @media (min-width: 0px) and (max-width: 480px) {
+    .textoCharlas {
+      font-size: 1rem;
+    }
+  }
 }
+
 
 
 /* ============ PRODUCTOS ============*/
 
-.cardProductos {
-  @include hoverCards;
+.mainProductos {
+  background: $color-fondos;
 
-  h2 {
-    font-size: $tamaño-fuente;
+  .cardProductos {
+    @include hoverCards;
+
+    h2 {
+      font-size: $tamaño-fuente;
+    }
   }
 }
 

@@ -26,19 +26,22 @@ footer span {
 .mainIndex {
   background: #5f9082;
 }
-.mainIndex .tituloIndex {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
+.mainIndex .imgIndex {
+  width: 30%;
 }
-.mainIndex .carouselIndex {
-  padding-bottom: 20px;
+.mainIndex .tituloIndex {
+  padding-top: 15px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
 }
 .mainIndex .parrafoIndex {
   font-weight: bold;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .mainIndex .imgIndex {
+    width: 70%;
+  }
 }
 
 /* ============ NOSOTROS ============*/
@@ -54,10 +57,15 @@ footer span {
 }
 
 /* ============ CHARLAS ============*/
+.mainCharlas {
+  background: #5f9082;
+}
+.mainCharlas .imgCharlas {
+  height: 50%;
+}
 .mainCharlas .textoCharlas {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  padding-top: 1rem;
   font-size: 1.5rem;
   animation-name: animationtex;
   animation-duration: 0.5s;
@@ -71,12 +79,21 @@ footer span {
     color: red;
   }
 }
+@media (min-width: 0px) and (max-width: 480px) {
+  .mainCharlas .textoCharlas {
+    font-size: 1rem;
+  }
+}
 
 /* ============ PRODUCTOS ============*/
-.cardProductos:hover {
-  transform: scale(1.02);
+.mainProductos {
+  background: #5f9082;
 }
-.cardProductos h2 {
+.mainProductos .cardProductos:hover {
+  transform: scale(1.02);
+  transition: 0.9s;
+}
+.mainProductos .cardProductos h2 {
   font-size: 1.5rem;
 }
 
