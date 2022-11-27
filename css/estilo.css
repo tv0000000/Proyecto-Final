@@ -63,6 +63,9 @@ footer span {
 .mainCharlas .imgCharlas {
   height: 50%;
 }
+.mainCharlas .textoCharlas1 {
+  font-weight: bold;
+}
 .mainCharlas .textoCharlas {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -77,6 +80,11 @@ footer span {
   }
   100% {
     color: red;
+  }
+}
+@media (min-width: 767px) and (max-width: 1300px) {
+  .mainCharlas .textoCharlas1 {
+    display: none;
   }
 }
 @media (min-width: 0px) and (max-width: 480px) {
