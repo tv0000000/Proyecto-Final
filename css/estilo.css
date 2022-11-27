@@ -1,0 +1,124 @@
+/* ============ FONT ============*/
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+/* ============ NAV ============*/
+header {
+  border-bottom: 1px solid black;
+}
+header img {
+  width: 7rem;
+  border-radius: 0.5rem;
+}
+header li {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+/* ============ FOOTER ============*/
+footer {
+  border-top: 1px solid black;
+}
+footer span {
+  font-weight: bold;
+}
+
+/* ============ INDEX ============*/
+.mainIndex {
+  background: #5f9082;
+}
+.mainIndex .tituloIndex {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+.mainIndex .carouselIndex {
+  padding-bottom: 20px;
+}
+.mainIndex .parrafoIndex {
+  font-weight: bold;
+}
+
+/* ============ NOSOTROS ============*/
+.sectionNos1 {
+  background-color: #5f9082;
+}
+.sectionNos1 .subtituloNosotros {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.sectionNos1 .parrafoNosotros {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ============ CHARLAS ============*/
+.mainCharlas .textoCharlas {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  animation-name: animationtex;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes animationtex {
+  0% {
+    color: black;
+  }
+  100% {
+    color: red;
+  }
+}
+
+/* ============ PRODUCTOS ============*/
+.cardProductos:hover {
+  transform: scale(1.02);
+}
+.cardProductos h2 {
+  font-size: 1.5rem;
+}
+
+/* ============ CONTACTO ============*/
+.backgroundContact {
+  background: #5f9082;
+}
+.backgroundContact h1 {
+  font-size: 2rem;
+}
+.backgroundContact .imgContact {
+  width: 500px;
+  border-radius: 40px;
+  margin-left: 220px;
+}
+.backgroundContact .botonSubmit {
+  width: 100px;
+  color: white;
+}
+.backgroundContact .textArea {
+  width: 400px;
+  border-radius: 10px;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .backgroundContact .imgContact {
+    display: none;
+  }
+  .backgroundContact .textArea {
+    width: 240px;
+    border-radius: 10px;
+  }
+  .backgroundContact .textInput {
+    width: 240px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1000px) {
+  .backgroundContact .textInput {
+    width: 300px;
+  }
+  .backgroundContact .imgContact {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,23 @@
+/* ============ FONT ============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+/* ============ NAV ============*/
+
+header {
+  border-bottom: $bordes-main;
+
+  img {
+    width: 7rem;
+    border-radius: 0.5rem;
+  }
+
+  li { 
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
+}
+
+
+ 
