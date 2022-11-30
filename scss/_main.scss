@@ -9,16 +9,10 @@
 
   .tituloIndex {
     padding-top: 15px;
-    // padding-bottom: 5px;
     font-size: 2rem;
     text-transform: uppercase;
-    // @include titulos;
-    color: #fff;
+    color: $color-texto;
   }
-
-  // .carouselIndex {
-  //   padding-bottom: 20px;
-  // }
 
   .parrafoIndex {
     @include titulos;
@@ -46,16 +40,16 @@
   .parrafoNosotros {
     @include letra;
   }
+
+  .imgNuestro {
+    border-radius: 4px;
+  }
 }
 
 /* ============ CHARLAS ============*/
 
 .mainCharlas {
   background: $color-fondos;
-
-  .imgCharlas {
-    height: 50%;
-  }
 
   .textoCharlas1 {
     @include titulos;
@@ -80,7 +74,7 @@
     }
   }
 
-  @media (min-width: 767px) and (max-width: 1300px) {
+  @media (min-width: 767px) {
     .textoCharlas1 {
       display: none;
     }
@@ -112,51 +106,52 @@
 /* ============ CONTACTO ============*/
 
 .backgroundContact {
-  background: $color-fondos;
+  background-image: url(../img/contacto.jpg);
+
+  .textInput {
+    width: $width-form;
+    margin: auto;
+  }
+
+  .contenedorForm {
+    text-align: center;
+    @include titulos
+  }
 
   h1 {
     font-size: 2rem;
   }
 
-  .imgContact {
-    width: 500px;
-    border-radius: 40px;
-    margin-left: 220px;
-  }
-
   .botonSubmit {
-    width: 100px;
-    color: white
+    width: 7rem;
+    color: $color-texto;
   }
 
   .textArea {
-    width: 400px;
+    text-align: center;
+    width: $width-form;
     border-radius: 10px;
   }
 
   @media (min-width: 0px) and (max-width: 480px) {
-    .imgContact {
-      display: none;
+
+    .contactoTitulo {
+      color: $color-texto;
+    }
+
+    .labelForm {
+      color: $color-texto;
+      @include titulos;
+
     }
 
     .textArea {
-      width: 240px;
+      width: $width-responsive;
       border-radius: 10px;
     }
 
     .textInput {
-      width: 240px;
-    }
-  }
-
-  @media (min-width: 481px) and (max-width: 1000px) {
-
-    .textInput {
-      width: 300px;
-    }
-
-    .imgContact {
-      display: none;
+      width: $width-responsive;
     }
   }
 }

@@ -50,26 +50,23 @@
   <!-- ==============MAIN============== -->
   <main class="container-fluid py-3 backgroundContact">
     <div class="row">
-      <section class="col-xl-4 sm-12">
-        <h1>Contacto</h1>
+
+      <section class="col contenedorForm borderForm">
+        <h1 class="contactoTitulo">Contacto</h1>
         <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <div class="mb-3 contenedorForm">
+            <label for="exampleInputEmail1" class="labelForm">Nombre</label>
             <input type="text" class="form-control textInput" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <label for="exampleInputEmail1" class="labelForm">Email</label>
             <input type="email" class="form-control textInput" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
 
-          <div class="mb-3">
-            <label class="labelForm" for="mensaje"></label>
+          <div class="mb-3 contenedortextArea">
+            <label class="labelText" for="mensaje"></label>
             <textarea class="itemsForm textArea" id="mensaje" cols="30" rows="10">Deje su mensaje</textarea>
           </div>
           <button type="submit" class="btn btn-secondary m-1 botonSubmit">Enviar</button>
         </form>
-      </section>
-
-      <section class="col-xl-8 sm-12">
-        <img class="imgContact"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" src="../img/contacto-prueba2.jpg" alt="imagen cofli">
       </section>
     </div>
   </main>

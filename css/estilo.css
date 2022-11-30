@@ -33,7 +33,7 @@ footer span {
   padding-top: 15px;
   font-size: 2rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #F0F3F4;
 }
 .mainIndex .parrafoIndex {
   font-weight: bold;
@@ -55,13 +55,13 @@ footer span {
 .sectionNos1 .parrafoNosotros {
   font-family: "Roboto", sans-serif;
 }
+.sectionNos1 .imgNuestro {
+  border-radius: 4px;
+}
 
 /* ============ CHARLAS ============*/
 .mainCharlas {
   background: #5f9082;
-}
-.mainCharlas .imgCharlas {
-  height: 50%;
 }
 .mainCharlas .textoCharlas1 {
   font-weight: bold;
@@ -82,7 +82,7 @@ footer span {
     color: red;
   }
 }
-@media (min-width: 767px) and (max-width: 1300px) {
+@media (min-width: 767px) {
   .mainCharlas .textoCharlas1 {
     display: none;
   }
@@ -107,42 +107,42 @@ footer span {
 
 /* ============ CONTACTO ============*/
 .backgroundContact {
-  background: #5f9082;
+  background-image: url(../img/contacto.jpg);
+}
+.backgroundContact .textInput {
+  width: 25rem;
+  margin: auto;
+}
+.backgroundContact .contenedorForm {
+  text-align: center;
+  font-weight: bold;
 }
 .backgroundContact h1 {
   font-size: 2rem;
 }
-.backgroundContact .imgContact {
-  width: 500px;
-  border-radius: 40px;
-  margin-left: 220px;
-}
 .backgroundContact .botonSubmit {
-  width: 100px;
-  color: white;
+  width: 7rem;
+  color: #F0F3F4;
 }
 .backgroundContact .textArea {
-  width: 400px;
+  text-align: center;
+  width: 25rem;
   border-radius: 10px;
 }
 @media (min-width: 0px) and (max-width: 480px) {
-  .backgroundContact .imgContact {
-    display: none;
+  .backgroundContact .contactoTitulo {
+    color: #F0F3F4;
+  }
+  .backgroundContact .labelForm {
+    color: #F0F3F4;
+    font-weight: bold;
   }
   .backgroundContact .textArea {
-    width: 240px;
+    width: 14rem;
     border-radius: 10px;
   }
   .backgroundContact .textInput {
-    width: 240px;
-  }
-}
-@media (min-width: 481px) and (max-width: 1000px) {
-  .backgroundContact .textInput {
-    width: 300px;
-  }
-  .backgroundContact .imgContact {
-    display: none;
+    width: 14rem;
   }
 }
 
